@@ -1,0 +1,5 @@
+# iCalendar requires CRLF line endings (RFC 5545 3.1). Exempt .ics from all
+# EOL normalisation so the exact bytes the build produces are the bytes that
+# get served -- and so the Linux CI runner doesn't see a phantom diff on every
+# run and commit endlessly.
+*.ics -text

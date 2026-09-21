@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Sports calendar</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 4rem auto; padding: 0 1rem; }
+  code { background: #f4f4f4; padding: .15em .4em; border-radius: 3px; word-break: break-all; }
+</style>
+<h1>Sports calendar</h1>
+<p>A merged, auto-updating feed of the schedules below. Subscribe in Outlook with:</p>
+<p><code id="u"></code></p>
+<ul>
+  <li>[NFL] Green Bay Packers</li>
+  <li>[MSU FB] Michigan State Spartans football</li>
+  <li>[MSU BB] Michigan State Spartans men's basketball</li>
+  <li>[MINN FB] Minnesota Golden Gophers football</li>
+</ul>
+<p><a href="sports.ics">Download sports.ics</a></p>
+<script>u.textContent = new URL('sports.ics', location.href).href;</script>
